@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Bebas Neue Pro";
+  src: url('https://github.com/dharmatype/Bebas-Neue/blob/master/fonts/BebasNeue(2018)ByDhamraType/ttf/BebasNeue-Regular.ttf');
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 16pt;
+}
+
+h1, h2, h3 {
+  font-family: "Bebas Neue Pro", sans-serif;
+}
+
+h1 {
+  font-size: 3.25em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.875em;
+  font-weight: 350;
+}
+
+p {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.subtitle {
+  font-family: "Rubik", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
