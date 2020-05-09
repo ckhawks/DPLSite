@@ -1,8 +1,8 @@
-import NewsPost from 'src/components/NewsPost'
+import NewsPost from 'src/components/NewsPost/NewsPost.js'
 
 export const QUERY = gql`
-  query {
-    posts {
+  query($id: Int!) {
+    post(id: $id) {
       id
       title
       body
@@ -17,6 +17,6 @@ export const Empty = () => <div>Empty</div>
 
 export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
-export const Success = ({ posts }) => {
-  return posts.map((post) => <NewsPost key={post.id} post={post} />)
+export const Success = ({ post }) => {
+  return <NewsPost post={post} />
 }
