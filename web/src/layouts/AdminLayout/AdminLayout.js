@@ -6,7 +6,7 @@ const AdminLayout = ({ children }) => {
       <header>
         <nav className="navbar navbar-expand-lg bg-primary">
           <Link to={routes.admin()} className="navbar-brand">
-            <img src="/aadpladmin.svg" height="44" />
+            <img src="/dpladmin.svg" height="44" />
           </Link>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
