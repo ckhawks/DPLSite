@@ -4,18 +4,33 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <header>
-        <h1>
-          <Link to={routes.home()}>DPL</Link>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to={routes.home()}>Home</Link>
-            </li>
-            <li>
-              <Link to={routes.about()}>About</Link>
-            </li>
-          </ul>
+        <nav className="navbar navbar-expand-lg bg-primary">
+          <Link to={routes.home()} className="navbar-brand">
+            <img src="dpl.svg" height="44" />
+          </Link>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="navbar-nav mr-auto">
+              <Link className="nav-item nav-link text-white" to={routes.home()}>
+                HOME
+              </Link>
+              <Link className="nav-item nav-link text-white" to={routes.about()}>
+                ABOUT
+              </Link>
+              <Link className="nav-item nav-link text-white" to={routes.home()}>
+                TEAMS
+              </Link>
+              <Link className="nav-item nav-link text-white" to={routes.home()}>
+                PLAYERS
+              </Link>
+              <Link className="nav-item nav-link text-white" to={routes.home()}>
+                STANDINGS
+              </Link>
+              <Link className="nav-item nav-link text-white" to={routes.home()}>
+                SCHEDULE
+              </Link>
+            </div>
+          </div>
         </nav>
       </header>
       <main>{children}</main>
