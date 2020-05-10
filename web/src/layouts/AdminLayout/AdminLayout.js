@@ -4,15 +4,24 @@ const AdminLayout = ({ children }) => {
   return (
     <>
       <header>
-        <h1>
-          <Link to={routes.admin()}>DPL Admin</Link>
-        </h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to={routes.posts()}>Posts</Link>
-            </li>
-          </ul>
+        <nav className="navbar navbar-expand-lg bg-primary">
+          <Link to={routes.admin()} className="navbar-brand">
+            <img src="/aadpladmin.svg" height="44" />
+          </Link>
+
+          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="navbar-nav mr-auto">
+              <Link className="nav-item nav-link text-white" to={routes.home()}>
+                BACK HOME
+              </Link>
+              <Link
+                className="nav-item nav-link text-white"
+                to={routes.posts()}
+              >
+                POSTS
+              </Link>
+            </div>
+          </div>
         </nav>
       </header>
       <main>{children}</main>

@@ -13,6 +13,10 @@ body{
   padding: 0px;
 }
 
+p, h1, h2, h3 {
+  color: #131328;
+}
+
 h1, h2, h3 {
   font-family: "Bebas Neue Pro", sans-serif;
 }
@@ -48,7 +52,10 @@ p {
 
 /* CHANGES MADE:
 INDIGO = DARK BLUE IN LOGO; PRIMARY = INDIGO;
-.nav-link FONT-SIZE & FONT-FAMILY
+.nav-link FONT-SIZE & FONT-FAMILY, PADDING = !important
+.navbar-brand padding-bottom: 0.3125rem -> 0.9rem;
+.navbar {padding: 0.5rem 1rem;} -> {padding: 0rem 1rem;}
+}
 */
 
 /*Generated using bootstrapcustomizer.com (http://www.bootstrapcustomizer.com/bootstrap/4.4.1/?id=b071b597-99d6-4fb9-afb7-601d0e2798da)*/
@@ -4284,7 +4291,7 @@ input[type="button"].btn-block {
 
 .nav-link {
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem !important;
   font-family: "Bebas Neue Pro";
   font-size: 36px;
 }
@@ -4378,7 +4385,7 @@ input[type="button"].btn-block {
       align-items: center;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
 }
 
 .navbar .container,
@@ -4396,7 +4403,7 @@ input[type="button"].btn-block {
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-bottom: 0.9rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;

@@ -14,3 +14,18 @@ model Post {
   body      String
   createdAt DateTime @default(now())
 }
+
+model Team {
+  id          Int    @default(autoincrement()) @id
+  name        String
+  description String?
+  logoUrl     String
+  roster      User[]
+}
+
+model User {
+  id          Int      @default(autoincrement()) @id
+  name        String
+  description String?
+  team        Team?
+}

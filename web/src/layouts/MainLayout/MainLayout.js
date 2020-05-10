@@ -6,7 +6,7 @@ const MainLayout = ({ children }) => {
       <header>
         <nav className="navbar navbar-expand-lg bg-primary">
           <Link to={routes.home()} className="navbar-brand">
-            <img src="dpl.svg" height="44" />
+            <img src="/dpl.svg" height="44" />
           </Link>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
@@ -14,7 +14,10 @@ const MainLayout = ({ children }) => {
               <Link className="nav-item nav-link text-white" to={routes.home()}>
                 HOME
               </Link>
-              <Link className="nav-item nav-link text-white" to={routes.about()}>
+              <Link
+                className="nav-item nav-link text-white"
+                to={routes.about()}
+              >
                 ABOUT
               </Link>
               <Link className="nav-item nav-link text-white" to={routes.home()}>
