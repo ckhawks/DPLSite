@@ -1,5 +1,4 @@
 import { Link, routes } from '@redwoodjs/router'
-
 import Posts from 'src/components/Posts'
 
 export const QUERY = gql`
@@ -17,7 +16,13 @@ export const beforeQuery = (props) => {
   return { variables: props, fetchPolicy: 'cache-and-network' }
 }
 
-export const Loading = () => <div>Loading...</div>
+export const Loading = () => (
+  <div className="text-center m-5">
+    <div className="spinner-border  text-primary" role="status">
+      <span className="sr-only">Loading...</span>
+    </div>
+  </div>
+)
 
 export const Empty = () => {
   return (

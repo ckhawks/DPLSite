@@ -11,7 +11,13 @@ export const QUERY = gql`
   }
 `
 
-export const Loading = () => <div>Loading...</div>
+export const Loading = () => (
+  <div className="text-center m-5">
+    <div className="spinner-border  text-primary" role="status">
+      <span className="sr-only">Loading...</span>
+    </div>
+  </div>
+)
 
 export const Empty = () => <div>Post not found</div>
 

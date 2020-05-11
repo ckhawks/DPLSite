@@ -20,7 +20,13 @@ const UPDATE_POST_MUTATION = gql`
   }
 `
 
-export const Loading = () => <div>Loading...</div>
+export const Loading = () => (
+  <div className="text-center m-5">
+    <div className="spinner-border  text-primary" role="status">
+      <span className="sr-only">Loading...</span>
+    </div>
+  </div>
+)
 
 export const Success = ({ post }) => {
   const [updatePost, { loading, error }] = useMutation(UPDATE_POST_MUTATION, {
