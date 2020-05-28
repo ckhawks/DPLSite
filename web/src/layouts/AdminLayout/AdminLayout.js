@@ -20,6 +20,18 @@ const AdminLayout = ({ children }) => {
               >
                 POSTS
               </Link>
+              <Link
+                className="nav-item nav-link text-white"
+                to={routes.teams()}
+              >
+                TEAMS
+              </Link>
+              <Link
+                className="nav-item nav-link text-white"
+                to={routes.users()}
+              >
+                USERS
+              </Link>
             </div>
           </div>
         </nav>

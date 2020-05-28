@@ -34,7 +34,7 @@ const MainLayout = ({ children }) => {
               </Link>
               <Link
                 className="nav-item nav-link text-white form-inline my-2 my-lg-0"
-                to={routes.home()}
+                to={routes.admin()}
               >
                 ADMIN
               </Link>

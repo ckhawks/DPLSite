@@ -1,0 +1,20 @@
+{
+  "version": "0.3.14-fixed",
+  "steps": [
+    {
+      "tag": "DeleteField",
+      "model": "Team",
+      "field": "roster"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "User",
+      "field": "teamId"
+    },
+    {
+      "tag": "DeleteField",
+      "model": "User",
+      "field": "team"
+    }
+  ]
+}

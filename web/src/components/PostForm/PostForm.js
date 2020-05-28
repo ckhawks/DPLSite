@@ -60,6 +60,20 @@ const PostForm = (props) => {
         />
         <FieldError name="body" className={CSS.errorMessage} />
 
+        <Label
+          name="authorId"
+          className={CSS.label}
+          errorClassName={CSS.labelError}
+        />
+        <TextField
+          name="authorId"
+          defaultValue={props.post?.authorId}
+          className={CSS.input}
+          errorClassName={CSS.inputError}
+          validation={{ required: true }}
+        />
+        <FieldError name="authorId" className={CSS.errorMessage} />
+
         <div className="mt-8 text-center">
           <Submit
             disabled={props.loading}

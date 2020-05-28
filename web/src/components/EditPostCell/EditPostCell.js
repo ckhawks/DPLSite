@@ -9,6 +9,7 @@ export const QUERY = gql`
       title
       body
       createdAt
+      authorId
     }
   }
 `
@@ -36,7 +37,8 @@ export const Success = ({ post }) => {
   })
 
   const onSave = (input, id) => {
-    updatePost({ variables: { id, input } })
+    const castInput = Object.assign(input, { authorId: parseInt(input.authorId) })
+    updatePost({ variables: { id, input: castInput } })
   }
 
   return (

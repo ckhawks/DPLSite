@@ -13,20 +13,24 @@ model Post {
   title     String
   body      String
   createdAt DateTime @default(now())
+  authorId  Int
+  author    User     @relation(fields: [authorId], references: [id])
 }
 
 model Team {
-  id          Int     @default(autoincrement()) @id
-  name        String
+  id          Int      @default(autoincrement()) @id
+  createdAt   DateTime @default(now())
+  name        String   @unique
   description String?
   logoUrl     String
   roster      User[]
 }
 
 model User {
-  id          Int     @default(autoincrement()) @id
-  name        String
-  description String?
-  teamId      Int?
-  team        Team?   @relation(fields: [teamId], references: [id])
+  id        Int      @default(autoincrement()) @id
+  createdAt DateTime @default(now())
+  name      String   @unique
+  bio       String?
+  teamId    Int?
+  team      Team?    @relation(fields: [teamId], references: [id])
 }
