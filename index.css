@@ -41,13 +41,22 @@ a:hover {
     padding: 1%;
 }
 
-.shadowed {
+.shadowlarge {
     transition: all .2s ease-in-out;
 }
 
-.shadowed:hover {
-    filter: drop-shadow(0 0 0.75rem white);
-    transform: scale(2);
+.shadowlarge:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    transform: scale(1.05);
+}
+
+.shadowsmall {
+    transition: all .2s ease-in-out;
+}
+
+.shadowsmall:hover {
+    filter: drop-shadow(0 0 0.5rem white);
+    transform: scale(1.25);
 }
 
 .shadowed2:hover {
