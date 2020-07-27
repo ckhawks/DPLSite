@@ -33,9 +33,29 @@ a:hover {
 .footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100vw;
+    padding-bottom: 2vh;
 }
 
 .footer > a {
-    padding: 1%
+    padding: 1%;
+}
+
+.shadowlarge {
+    transition: all .2s ease-in-out;
+}
+
+.shadowlarge:hover {
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
+    transform: scale(1.05);
+}
+
+.shadowsmall {
+    transition: all .2s ease-in-out;
+}
+
+.shadowsmall:hover {
+    filter: drop-shadow(0 0 0.3rem black);
+    transform: scale(1.25);
 }
