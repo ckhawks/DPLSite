@@ -34,8 +34,27 @@ a:hover {
     position: fixed;
     bottom: 0;
     width: 100vw;
+    padding-bottom: 2vh;
 }
 
 .footer > a {
-    padding: 1%
+    padding: 1%;
+}
+
+.shadowed {
+    transition: all .2s ease-in-out;
+}
+
+.shadowed:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+    transform: scale(2);
+}
+
+.shadowed2:hover {
+    -webkit-filter: drop-shadow(0px 0px 15px rgba(0,0,0,.1));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#444')";
+    
+    transform: scale(1.05);
 }
