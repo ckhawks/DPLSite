@@ -33,6 +33,7 @@ a:hover {
 .footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100vw;
     padding-bottom: 2vh;
 }
@@ -46,7 +47,7 @@ a:hover {
 }
 
 .shadowlarge:hover {
-    filter: drop-shadow(0 0 0.75rem rgb(0, 0, 0));
+    filter: drop-shadow(0 0 0.5rem rgb(0, 0, 0));
     transform: scale(1.05);
 }
 
@@ -55,6 +56,6 @@ a:hover {
 }
 
 .shadowsmall:hover {
-    filter: drop-shadow(0 0 0.5rem white);
+    filter: drop-shadow(0 0 0.3rem black);
     transform: scale(1.25);
 }
