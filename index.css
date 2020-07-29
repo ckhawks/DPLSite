@@ -164,11 +164,15 @@ footer > a {
     margin: 0 auto;
 }
 
+.dark {
+    color: black;
+    text-decoration: underline;
+}
+
 table {
     font-size: 1em;
     text-align: left;
     width: 100%;
-    !!border: 1px solid grey;
 }
 
 thead {
