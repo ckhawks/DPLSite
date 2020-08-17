@@ -78,6 +78,10 @@ header {
     min-width: 60%;
 }
 
+.mainlogo > h1 {
+    color: white;
+}
+
 .page2 {
     background-color: white;
     color: #131328;
