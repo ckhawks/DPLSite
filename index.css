@@ -78,8 +78,12 @@ header {
     min-width: 60%;
 }
 
-.mainlogo > h1 {
+.mainlogo > a > h1 {
     color: white;
+}
+
+.mainlogo > a > h1:hover {
+    color: rgb(128, 128, 128);
 }
 
 .page2 {
