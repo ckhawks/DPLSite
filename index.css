@@ -1,6 +1,7 @@
 body {
     text-align: center;
     background-color: #131328;
+    /*background: linear-gradient(125deg, rgba(34, 45, 91, 1) 0%, rgba(31, 40, 82, 1) 11.13%, rgba(24, 28, 56, 1) 29.57%, rgba(19, 20, 39, 1) 40%, rgba(19, 20, 39, 1) 60%, rgba(63, 23, 44, 1) 99.44%);*/
     color: #131328;
     font-family: bebas-neue-pro, sans-serif;
     font-weight: 400;
@@ -13,9 +14,14 @@ body {
     line-height: 1.35;
 }
 
+.nav-link {
+    font-size: 20pt;
+    margin-left: 1em;
+}
+
 .container {
     margin: 10px auto;
-    padding: 0 20px;
+    padding: 30px 20px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,10 +45,10 @@ body {
     text-align: right;
 }
 
-header {
-    height: 50px;
-    background-color: grey;
-    justify-content: center;
+.navbar {
+    box-shadow: 0px 3px 10px black;
+    background-color: #131328;
+    background: linear-gradient(125deg, rgba(34, 45, 91, 1) 0%, rgba(31, 40, 82, 1) 11.13%, rgba(24, 28, 56, 1) 29.57%, rgba(19, 20, 39, 1) 40%, rgba(19, 20, 39, 1) 60%, rgba(63, 23, 44, 1) 99.44%);
 }
 
 #content {
@@ -78,10 +84,6 @@ header {
     min-width: 60%;
 }
 
-.mainlogo > h1 {
-    color: white;
-}
-
 .page2 {
     background-color: white;
     color: #131328;
@@ -89,15 +91,16 @@ header {
 
 h1 {
     text-transform: uppercase;
-    color: #131328;
     font-size: 2.5em;
     margin-bottom: 0px;
+    font-weight: bold;
 }
 
 h2 {
     color: #131328;
     margin: 0px;
     font-size: 1.75em;
+    font-weight: bold;
 }
 
 h3 {
@@ -190,7 +193,7 @@ tr:nth-child(even) {
 }
 
 td, th {
-    padding: 10px;
+    padding: 10px; 
 }
 
 .flex-grid {
@@ -207,3 +210,43 @@ td, th {
     width: 100%;
 }
 
+.bg-dark {
+    background-color: #131328 !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.hide {
+	animation: slide-out 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+.navshow {
+	animation: slide-bottom 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes slide-bottom {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+:target {
+    display: block;
+    position: relative;
+    top: -95px; 
+    visibility: hidden;
+}

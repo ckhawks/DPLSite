@@ -2,20 +2,56 @@
   <head>
     
     <!-- stylesheet must be the very first thing to prevent stupid pageload animation thing -->
-    <link href="index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.typekit.net/hqe6vcf.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" >   
+    <link rel="stylesheet" href="index.css">
     <script src="js/main.js"></script>
     <title>Due Process League</title>
     
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#main-nav" data-offset="96">
     <div id="content">
-      <!-- <header>Header</header> -->
+      <nav id="main-nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top hidden">
+        <a class="navbar-brand" href="#">
+          <img style="height: 50px; padding-bottom:4px;" src="assets/dpl.svg">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#twitch">Twitch</a>
+            <a class="nav-link" href="#calendar">Calendar</a>
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Teams
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#teams">Meet the Teams</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#aricaardvarks">Aric Aardvarks</a>
+                <a class="dropdown-item" href="#coredynamics">Core Dynamics</a>
+                <a class="dropdown-item" href="#darklightstudios">DarkLight Studios</a>
+                <a class="dropdown-item" href="#dfc">DFC</a>
+                <a class="dropdown-item" href="#flatline">Flatline</a>
+                <a class="dropdown-item" href="#fluff">Fluff</a>
+                <a class="dropdown-item" href="#guacamole">Guacamole</a>
+                <a class="dropdown-item" href="#lcg">LCG</a>
+                <a class="dropdown-item" href="#redteam">RED TEAM</a>
+                <a class="dropdown-item" href="#statusquo">StatusQuo</a>
+                <a class="dropdown-item" href="#spg">Sanctus Palma Granata</a>
+                <a class="dropdown-item" href="#therats">The Rats</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       <div id="homepage" class="container container-lg">
         <div class="mainlogo">
           <a href="https://discord.gg/ah2gHZP"><img class="shadowlarge" src="assets/dpl.svg"></a>
-          <h1>Join our discord!</h1>
         </div>
         
         <footer class="homepage-social-buttons">
@@ -27,7 +63,8 @@
           <a href="mailto:dueprocessleague@gmail.com"><img class="shadowsmall" height="40px" src="assets/email.svg"></a>
         </footer>
       </div>
-
+      
+      <a id="about"></a>
       <div style="padding-bottom: 30px;" class="container container-lg page2">
         <div class="text-box-left">
           <div class="col">
@@ -39,6 +76,7 @@
         </div>
       </div>
 
+      <a id="twitch"></a>
       <div style="padding-bottom: 30px;" class="container container-lg page2">
         <div class="text-box-left">
           <div class="col">
@@ -51,6 +89,7 @@
         </div>
       </div>
 
+      <a id="calendar"></a>
       <div style="padding-bottom: 30px;" class="container container-lg page2">
         <div class="text-box-left">
           <div class="col">
@@ -62,546 +101,561 @@
         </div>
       </div>
 
+      <a id="teams"></a>
       <div class="container container-lg page2">
-        <div class="text-box-left">
-          <div class="col">
-            <h1 style="max-width: 30vw;">Meet The Teams</h1>
-            <p>Teams can be contacted through the Due Process League discord.</p>
+          <div class="text-box-left">
+            <div class="col">
+              <h1 style="max-width: 30vw;">Meet The Teams</h1>
+              <p>Teams can be contacted through the Due Process League discord.</p>
+            </div>
+            <a id="aricaardvarks"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: #987654;" class="colorbox"></div><h2>Aric Aardvarks</h2>
+                <p>
+                  <i>aardvark noises</i>
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Busquick (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>lordofpoop</td>
+                      </tr>
+                      <tr>
+                        <td class>LoneWolff</td>
+                      </tr>
+                      <tr>
+                        <td class>Trevic</td>
+                      </tr>
+                      <tr>
+                        <td class>vupf</td>
+                      </tr>
+                      <tr>
+                        <td class>DeadNotSleeping</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/aricaardvarks.png">
+              </div>
+            </div>
+            <a id="coredynamics"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: #000096;" class="colorbox"></div><h2>Core Dynamics</h2>
+                <p>
+                  Victory on the frontier is what we strive for, leading the way for a better future, a future we can all thrive in.
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Cr0ss (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>Frozty_Squad</td>
+                      </tr>
+                      <tr>
+                        <td class>! Ispy</td>
+                      </tr>
+                      <tr>
+                        <td class>RedElixir</td>
+                      </tr>
+                      <tr>
+                        <td class>Breeze</td>
+                      </tr>
+                      <tr>
+                        <td class>Magic</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/coredynamics.png">
+              </div>
+            </div>
+            <a id="darklightstudios"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: cyan;" class="colorbox"></div><h2>DarkLight Studios</h2>
+                <p>
+                  The right strategy in the wrong place can make all the difference in the world. That's why we use MemeStrats&trade;.
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>En1gmatic (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>ohnodeepcrow</td>
+                      </tr>
+                      <tr>
+                        <td class>Warmy</td>
+                      </tr>
+                      <tr>
+                        <td class>Jo</td>
+                      </tr>
+                      <tr>
+                        <td class>Corgs</td>
+                      </tr>
+                      <tr>
+                        <td class>Cloudbow Rose</td>
+                      </tr>
+                      <tr>
+                        <td class>Miles O'Crien</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/dls_black.png">
+              </div>
+            </div>
+            <a id="dfc"></a> 
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: purple;" class="colorbox"></div><h2>DFC</h2>
+                <p>
+                                  
+                  &#x3000;&#x3000;&#x3000; &#xFF0F;&#xFFE3;&#xFFE3;&#xFFE3;&#xFFE3;&#xFF3C;<br>
+                  &#x3000;&#x3000;&#x3000;/&#x3000;&#x3000;&#x3000;&#x3000; &#x25CF;&#x3000;&#x3000;&#x25CF;&#x3000;<br>
+                  &#x3000;&#x3000;&#x3000;|Y&#x3000;&#x3000;Y&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#xFF3C;<br>
+                  &#x3000;&#x3000;&#x3000;| |&#x3000;&#x3000; | &#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x25BC; |&#x3000;&#x3000;<br>
+                  &#x3000;&#x3000;&#x3000;| &#xFF3C;&#xFF0F; &#x3000;&#x3000; &#x3000; &#x3000; &#xFF3F;&#x4EBA;|&#x3000;<br>
+                  &#x3000;&#x3000;&#x3000;|&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000; &#xFF3F;&#xFF3F;&#xFF3F;&#xFF0F;<br>
+                  &#x3000;&#x3000;&#x3000;&#xFF3C;&#x3000;&#x3000;&#x3000;&#x3000;&#xFF0F; &#x3000; &#x3000; &#x3000;<br>
+                  &#x3000;&#x3000;&#x3000;&#x3000;&#xFF5C; &#xFF5C;&#x3000;|&#x3000;<br>
+                  &#x3000;&#x3000;&#x3000;&#x3000;&#xFF08;_&#xFF3F;&#xFF09;&#xFF3F;&#xFF09; <br>
+  
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Yunkster (Nunk) (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>deffectz</td>
+                      </tr>
+                      <tr>
+                        <td class>Shaddeh</td>
+                      </tr>
+                      <tr>
+                        <td class>Spha</td>
+                      </tr>
+                      <tr>
+                        <td class>Yangjo</td>
+                      </tr>
+                      <tr>
+                        <td class>Nazuki</td>
+                      </tr>
+                      <tr>
+                        <td class>snow</td>
+                      </tr>
+                      <tr>
+                        <td class>Cyex</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/dfc.png">
+              </div>
+            </div>
+            <a id="flatline"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: greenyellow;" class="colorbox"></div><h2>Flatline</h2>
+                <p>
+                  Flatline is a team of dedicated players with backgrounds in other competitive titles. We build our synergy upon a positive environment and  superior communication.
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Mackey Moose (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>C34A</td>
+                      </tr>
+                      <tr>
+                        <td class>Josh</td>
+                      </tr>
+                      <tr>
+                        <td class>.exe cutioner</td>
+                      </tr>
+                      <tr>
+                        <td class>CaptainKnight</td>
+                      </tr>
+                      <tr>
+                        <td class>Vuples</td>
+                      </tr>
+                      <tr>
+                        <td class>boxeru13</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/flatline.png">
+              </div>
+            </div>
+            <a id="fluff"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: rgb(228, 13, 120);" class="colorbox"></div><h2>Fluff</h2>
+                <p>
+                  Fluff is a new and upcoming roster after re-branding from Whiskey Wednesday and rebuilding almost the entire roster; a team that mixes skill and fun to beat their competition and live up to expectations of its former top roster.
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Marbles (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>rostovne</td>
+                      </tr>
+                      <tr>
+                        <td class>TemmieShark</td>
+                      </tr>
+                      <tr>
+                        <td class>Unmatching Socks</td>
+                      </tr>
+                      <tr>
+                        <td class>ned</td>
+                      </tr>
+                      <tr>
+                        <td class>Billboard</td>
+                      </tr>
+                      <tr>
+                        <td class>Frsoty</td>
+                      </tr>
+                      <tr>
+                        <td class>Gravy</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/fluff.png">
+              </div>
+            </div>
+            <a id="guacamole"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: yellow;" class="colorbox"></div><h2>Guacamole</h2>
+                <p>
+                  The most scuffed team in the league hailing from R6 Go4's looking to break into the Due Process scene. If you are interested in trying out for the team, feel free to DM me and I'll get back to you ASAP.
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Ninjadude149 (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>&#12402;&#12392;&#12371;&#12414;&#12388;&#12365;&#12394;&#12416;</td>
+                      </tr>
+                      <tr>
+                        <td class>Aj.-.S7y</td>
+                      </tr>
+                      <tr>
+                        <td class>Spongeton</td>
+                      </tr>
+                      <tr>
+                        <td class>Nahmantic</td>
+                      </tr>
+                      <tr>
+                        <td class>Babenick</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/guacamole.png">
+              </div>
+            </div>
+            <a id="lcg"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: #d0ff00;" class="colorbox"></div><h2>LCG</h2>
+                <p>
+                  We are the first German DPL team and yes we like beer and sausages!
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>El_Pablo (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>KuhohneFlecken</td>
+                      </tr>
+                      <tr>
+                        <td class>Lando</td>
+                      </tr>
+                      <tr>
+                        <td class>Gramstaal</td>
+                      </tr>
+                      <tr>
+                        <td class>KinderRiegel</td>
+                      </tr>
+                      <tr>
+                        <td class>Paiz</td>
+                      </tr>
+                      <tr>
+                        <td class>chill</td>
+                      </tr>
+                      <tr>
+                        <td class>DerTeasy</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/lcg.png">
+              </div>
+            </div>
+            <a id="redteam"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: rgb(160, 0, 0);" class="colorbox"></div><h2>RED TEAM</h2>
+                <p>
+                  RED TEAM, because red is a rad color 
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>RedCommissar (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>abel</td>
+                      </tr>
+                      <tr>
+                        <td class>CADmonkey</td>
+                      </tr>
+                      <tr>
+                        <td class>Communist Spacecrabs</td>
+                      </tr>
+                      <tr>
+                        <td class>Derby</td>
+                      </tr>
+                      <tr>
+                        <td class>Mace</td>
+                      </tr>
+                      <tr>
+                        <td class>satrams</td>
+                      </tr>
+                      <tr>
+                        <td class>Swordsworth</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/redteam.png">
+              </div>
+            </div>
+            <a id="statusquo"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: green;" class="colorbox"></div><h2>StatusQuo</h2>
+                <p>
+                  We are StatusQuo, proof perfection exists. If you wanna be part of perfection just shoot me a quick DM. You too could join and be one of the GREATS. Join us and keep the method of perfection intact, (disclaimer: half joke)
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>KommsGG (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>GurraJ</td>
+                      </tr>
+                      <tr>
+                        <td class>Fishyphany</td>
+                      </tr>
+                      <tr>
+                        <td class>Swus</td>
+                      </tr>
+                      <tr>
+                        <td class>snake boy</td>
+                      </tr>
+                      <tr>
+                        <td class>gTank</td>
+                      </tr>
+                      <tr>
+                        <td class>Investigator</td>
+                      </tr>
+                      <tr>
+                        <td class>witty</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/statusquo.png">
+              </div>
+            </div>
+            <a id="spg"></a>
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: #d763ff;" class="colorbox"></div><h2>Sanctus Palma Granata</h2>
+                <p>
+                  Just a bunch of Due Process players, who want to represent the player base (with consent of course).
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Stermy (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>Tibor Tarren</td>
+                      </tr>
+                      <tr>
+                        <td class>Kofu</td>
+                      </tr>
+                      <tr>
+                        <td class>KyvinTheLlama</td>
+                      </tr>
+                      <tr>
+                        <td class>Copypaster</td>
+                      </tr>
+                      <tr>
+                        <td class>Sleep</td>
+                      </tr>
+                      <tr>
+                        <td class>KhaiQ</td>
+                      </tr>
+                      <tr>
+                        <td class>ShockDoctor</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/spg.png">
+              </div>
+            </div>
+            <a id="therats"></a>     
+            <div class="flex-grid">
+              <div class="col">
+                <div style="background: #00ffff;" class="colorbox"></div><h2>The Rats</h2>
+                <p>
+                  We are the rats, we use everything in our arsenal just to win, so join the rats and get on top with a RAT ATTACK!
+                </p>
+                <p>
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class>Roster</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class>Puppyruski (captain)</td>
+                      </tr>
+                      <tr>
+                        <td class>TorrN_</td>
+                      </tr>
+                      <tr>
+                        <td class>Sens The Sinner</td>
+                      </tr>
+                      <tr>
+                        <td class>Meatball</td>
+                      </tr>
+                      <tr>
+                        <td class>SickGamer01</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                  </p>
+              </div>
+              <div class="col">
+                <img src="images/teams/therats.png">
+              </div>
+            </div>              
           </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: #987654;" class="colorbox"></div><h2>Aric Aardvarks</h2>
-              <p>
-                <i>aardvark noises</i>
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Busquick (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>lordofpoop</td>
-                    </tr>
-                    <tr>
-                      <td class>LoneWolff</td>
-                    </tr>
-                    <tr>
-                      <td class>Trevic</td>
-                    </tr>
-                    <tr>
-                      <td class>vupf</td>
-                    </tr>
-                    <tr>
-                      <td class>DeadNotSleeping</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/aricaardvarks.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: #000096;" class="colorbox"></div><h2>Core Dynamics</h2>
-              <p>
-                Victory on the frontier is what we strive for, leading the way for a better future, a future we can all thrive in.
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Cr0ss (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>Frozty_Squad</td>
-                    </tr>
-                    <tr>
-                      <td class>! Ispy</td>
-                    </tr>
-                    <tr>
-                      <td class>RedElixir</td>
-                    </tr>
-                    <tr>
-                      <td class>Breeze</td>
-                    </tr>
-                    <tr>
-                      <td class>Magic</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/coredynamics.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: cyan;" class="colorbox"></div><h2>DarkLight Studios</h2>
-              <p>
-                The right strategy in the wrong place can make all the difference in the world. That's why we use MemeStrats&trade;.
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>En1gmatic (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>ohnodeepcrow</td>
-                    </tr>
-                    <tr>
-                      <td class>Warmy</td>
-                    </tr>
-                    <tr>
-                      <td class>Jo</td>
-                    </tr>
-                    <tr>
-                      <td class>Corgs</td>
-                    </tr>
-                    <tr>
-                      <td class>Cloudbow Rose</td>
-                    </tr>
-                    <tr>
-                      <td class>Miles O'Crien</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/dls_black.png">
-            </div>
-          </div>   
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: purple;" class="colorbox"></div><h2>DFC</h2>
-              <p>
-                                
-                &#x3000;&#x3000;&#x3000; &#xFF0F;&#xFFE3;&#xFFE3;&#xFFE3;&#xFFE3;&#xFF3C;<br>
-                &#x3000;&#x3000;&#x3000;/&#x3000;&#x3000;&#x3000;&#x3000; &#x25CF;&#x3000;&#x3000;&#x25CF;&#x3000;<br>
-                &#x3000;&#x3000;&#x3000;|Y&#x3000;&#x3000;Y&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#xFF3C;<br>
-                &#x3000;&#x3000;&#x3000;| |&#x3000;&#x3000; | &#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x25BC; |&#x3000;&#x3000;<br>
-                &#x3000;&#x3000;&#x3000;| &#xFF3C;&#xFF0F; &#x3000;&#x3000; &#x3000; &#x3000; &#xFF3F;&#x4EBA;|&#x3000;<br>
-                &#x3000;&#x3000;&#x3000;|&#x3000;&#x3000;&#x3000;&#x3000;&#x3000;&#x3000; &#xFF3F;&#xFF3F;&#xFF3F;&#xFF0F;<br>
-                &#x3000;&#x3000;&#x3000;&#xFF3C;&#x3000;&#x3000;&#x3000;&#x3000;&#xFF0F; &#x3000; &#x3000; &#x3000;<br>
-                &#x3000;&#x3000;&#x3000;&#x3000;&#xFF5C; &#xFF5C;&#x3000;|&#x3000;<br>
-                &#x3000;&#x3000;&#x3000;&#x3000;&#xFF08;_&#xFF3F;&#xFF09;&#xFF3F;&#xFF09; <br>
-
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Yunkster (Nunk) (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>deffectz</td>
-                    </tr>
-                    <tr>
-                      <td class>Shaddeh</td>
-                    </tr>
-                    <tr>
-                      <td class>Spha</td>
-                    </tr>
-                    <tr>
-                      <td class>Yangjo</td>
-                    </tr>
-                    <tr>
-                      <td class>Nazuki</td>
-                    </tr>
-                    <tr>
-                      <td class>snow</td>
-                    </tr>
-                    <tr>
-                      <td class>Cyex</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/dfc.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: greenyellow;" class="colorbox"></div><h2>Flatline</h2>
-              <p>
-                Flatline is a team of dedicated players with backgrounds in other competitive titles. We build our synergy upon a positive environment and  superior communication.
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Mackey Moose (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>C34A</td>
-                    </tr>
-                    <tr>
-                      <td class>Josh</td>
-                    </tr>
-                    <tr>
-                      <td class>.exe cutioner</td>
-                    </tr>
-                    <tr>
-                      <td class>CaptainKnight</td>
-                    </tr>
-                    <tr>
-                      <td class>Vuples</td>
-                    </tr>
-                    <tr>
-                      <td class>boxeru13</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/flatline.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: rgb(228, 13, 120);" class="colorbox"></div><h2>Fluff</h2>
-              <p>
-                Fluff is a new and upcoming roster after re-branding from Whiskey Wednesday and rebuilding almost the entire roster; a team that mixes skill and fun to beat their competition and live up to expectations of its former top roster.
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Marbles (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>rostovne</td>
-                    </tr>
-                    <tr>
-                      <td class>TemmieShark</td>
-                    </tr>
-                    <tr>
-                      <td class>Unmatching Socks</td>
-                    </tr>
-                    <tr>
-                      <td class>ned</td>
-                    </tr>
-                    <tr>
-                      <td class>Billboard</td>
-                    </tr>
-                    <tr>
-                      <td class>Frsoty</td>
-                    </tr>
-                    <tr>
-                      <td class>Gravy</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/fluff.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: yellow;" class="colorbox"></div><h2>Guacamole</h2>
-              <p>
-                The most scuffed team in the league hailing from R6 Go4's looking to break into the Due Process scene. If you are interested in trying out for the team, feel free to DM me and I'll get back to you ASAP.
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Ninjadude149 (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>&#12402;&#12392;&#12371;&#12414;&#12388;&#12365;&#12394;&#12416;</td>
-                    </tr>
-                    <tr>
-                      <td class>Aj.-.S7y</td>
-                    </tr>
-                    <tr>
-                      <td class>Spongeton</td>
-                    </tr>
-                    <tr>
-                      <td class>Nahmantic</td>
-                    </tr>
-                    <tr>
-                      <td class>Babenick</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/guacamole.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: #d0ff00;" class="colorbox"></div><h2>LCG</h2>
-              <p>
-                We are the first German DPL team and yes we like beer and sausages!
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>El_Pablo (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>KuhohneFlecken</td>
-                    </tr>
-                    <tr>
-                      <td class>Lando</td>
-                    </tr>
-                    <tr>
-                      <td class>Gramstaal</td>
-                    </tr>
-                    <tr>
-                      <td class>KinderRiegel</td>
-                    </tr>
-                    <tr>
-                      <td class>Paiz</td>
-                    </tr>
-                    <tr>
-                      <td class>chill</td>
-                    </tr>
-                    <tr>
-                      <td class>DerTeasy</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/lcg.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: rgb(160, 0, 0);" class="colorbox"></div><h2>RED TEAM</h2>
-              <p>
-                RED TEAM, because red is a rad color 
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>RedCommissar (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>abel</td>
-                    </tr>
-                    <tr>
-                      <td class>CADmonkey</td>
-                    </tr>
-                    <tr>
-                      <td class>Communist Spacecrabs</td>
-                    </tr>
-                    <tr>
-                      <td class>Derby</td>
-                    </tr>
-                    <tr>
-                      <td class>Mace</td>
-                    </tr>
-                    <tr>
-                      <td class>satrams</td>
-                    </tr>
-                    <tr>
-                      <td class>Swordsworth</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/redteam.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: green;" class="colorbox"></div><h2>StatusQuo</h2>
-              <p>
-                We are StatusQuo, proof perfection exists. If you wanna be part of perfection just shoot me a quick DM. You too could join and be one of the GREATS. Join us and keep the method of perfection intact, (disclaimer: half joke)
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>KommsGG (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>GurraJ</td>
-                    </tr>
-                    <tr>
-                      <td class>Fishyphany</td>
-                    </tr>
-                    <tr>
-                      <td class>Swus</td>
-                    </tr>
-                    <tr>
-                      <td class>snake boy</td>
-                    </tr>
-                    <tr>
-                      <td class>gTank</td>
-                    </tr>
-                    <tr>
-                      <td class>Investigator</td>
-                    </tr>
-                    <tr>
-                      <td class>witty</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/statusquo.png">
-            </div>
-          </div>
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: #d763ff;" class="colorbox"></div><h2>Sanctus Palma Granata</h2>
-              <p>
-                Just a bunch of Due Process players, who want to represent the player base (with consent of course).
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Stermy (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>Tibor Tarren</td>
-                    </tr>
-                    <tr>
-                      <td class>Kofu</td>
-                    </tr>
-                    <tr>
-                      <td class>KyvinTheLlama</td>
-                    </tr>
-                    <tr>
-                      <td class>Copypaster</td>
-                    </tr>
-                    <tr>
-                      <td class>Sleep</td>
-                    </tr>
-                    <tr>
-                      <td class>KhaiQ</td>
-                    </tr>
-                    <tr>
-                      <td class>ShockDoctor</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/spg.png">
-            </div>
-          </div>       
-          <div class="flex-grid">
-            <div class="col">
-              <div style="background: #00ffff;" class="colorbox"></div><h2>The Rats</h2>
-              <p>
-                We are the rats, we use everything in our arsenal just to win, so join the rats and get on top with a RAT ATTACK!
-              </p>
-              <p>
-                <table>
-                  <thead>
-                    <tr>
-                      <th class>Roster</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class>Puppyruski (captain)</td>
-                    </tr>
-                    <tr>
-                      <td class>TorrN_</td>
-                    </tr>
-                    <tr>
-                      <td class>Sens The Sinner</td>
-                    </tr>
-                    <tr>
-                      <td class>Meatball</td>
-                    </tr>
-                    <tr>
-                      <td class>SickGamer01</td>
-                    </tr>
-                  </tbody>
-                  </table>
-                </p>
-            </div>
-            <div class="col">
-              <img src="images/teams/therats.png">
-            </div>
-          </div>              
-        </div>
       </div>
-      <div id="copyright" class="container container-lg">
+      
+      <a id="copyright"></a>
+      <div class="container container-lg">
         <div class="text-box-center">
-          <p>
+          <p class="text-light">
             Due Process League 2020<br>
             Due Process and its associated assets are property of Giant Enemy Crab and Annapurna Interactive.
           </p>
@@ -612,5 +666,8 @@
 
     <!-- trying to fix stupid pageload animation thing -->
     <script> </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   </body>
 </html>
