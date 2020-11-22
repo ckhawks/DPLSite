@@ -1,6 +1,8 @@
 datasource DS {
+  // optionally set multiple providers
+  // example: provider = ["sqlite", "postgresql"]
   provider = "mysql"
-  url      = "mysql://lmbot:BJ75zs654GcfUkSj@dedi.prettyawful.net:3305/website"
+  url = "***"
 }
 
 generator client {

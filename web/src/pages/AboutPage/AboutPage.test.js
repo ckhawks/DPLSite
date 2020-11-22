@@ -1,11 +1,8 @@
-import { render, cleanup } from '@testing-library/react'
+import { render } from '@redwoodjs/testing'
 
 import AboutPage from './AboutPage'
 
 describe('AboutPage', () => {
-  afterEach(() => {
-    cleanup()
-  })
   it('renders successfully', () => {
     expect(() => {
       render(<AboutPage />)

@@ -1,14 +1,3 @@
-# IF THERE'S A GIT CONFLICT IN THIS FILE, DON'T SOLVE IT MANUALLY!
-# INSTEAD EXECUTE `prisma migrate fix`
 # Prisma Migrate lockfile v1
-# Read more about conflict resolution here: TODO
 
-20200509034344-create-posts
-20200510032103-added-teams--users
-20200511140010-user-desc-renamed
-20200511141333-removed-relations
-20200511142323-createdat
-20200511190214-added-relations
-20200511192540-renamed-user-creation-date
-20200513010312-added-roster
-20200513183031-post-author
+20201122093601-create-posts

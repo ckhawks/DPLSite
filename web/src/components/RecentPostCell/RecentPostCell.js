@@ -25,7 +25,7 @@ export const Empty = () => {
 export const Success = ({ posts }) => {
   return (
     <>
-      {posts.map((post) => (<Post post={post} />))}
+      <Post post={posts[posts.length-1]} />
     </>
   )
 }

@@ -12,29 +12,13 @@ export const post = ({ id }) => {
 
 export const createPost = ({ input }) => {
   return db.post.create({
-    data: {
-      title: input.title,
-      body: input.body,
-      author: {
-        connect: {
-          id: input.authorId,
-        },
-      },
-    },
+    data: input,
   })
 }
 
 export const updatePost = ({ id, input }) => {
   return db.post.update({
-    data: {
-      title: input.title,
-      body: input.body,
-      author: {
-        connect: {
-          id: input.authorId,
-        },
-      },
-    },
+    data: input,
     where: { id },
   })
 }

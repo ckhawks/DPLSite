@@ -1,15 +1,14 @@
 import PostsLayout from 'src/layouts/PostsLayout'
+import DefaultLayout from 'src/layouts/DefaultLayout'
 import PostsCell from 'src/components/PostsCell'
-
-import AdminLayout from 'src/layouts/AdminLayout/AdminLayout'
 
 const PostsPage = () => {
   return (
-    <AdminLayout>
+    <DefaultLayout>
       <PostsLayout>
         <PostsCell />
       </PostsLayout>
-    </AdminLayout>
+    </DefaultLayout>
   )
 }
 

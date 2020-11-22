@@ -1,12 +1,14 @@
-import MainLayout from 'src/layouts/MainLayout'
-import NewsPostsCell from 'src/components/NewsPostsCell'
+import { Link, routes } from '@redwoodjs/router'
+import DefaultLayout from 'src/layouts/DefaultLayout/DefaultLayout'
+import RecentPostCell from 'src/components/RecentPostCell'
 
 const HomePage = () => {
   return (
-    <MainLayout>
-      <NewsPostsCell></NewsPostsCell>
-      <p>Find me in ./web\src\pages\HomePage\HomePage.js</p>
-    </MainLayout>
+    <>
+      <DefaultLayout>
+        <RecentPostCell />
+      </DefaultLayout>
+    </>
   )
 }
 
