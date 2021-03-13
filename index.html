@@ -1,66 +1,75 @@
 <html>
-  <head>
-    
+
+<head>
+
     <!-- stylesheet must be the very first thing to prevent stupid pageload animation thing -->
     <link href="index.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/hqe6vcf.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="js/main.js"></script>
     <title>Due Process League</title>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176043319-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-176043319-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176043319-1');
     </script>
-    
-  </head>
-  <body>
+
+</head>
+
+<body>
     <div id="content">
-      <!-- <header>Header</header> -->
-      <div id="homepage" class="container container-lg">
-        <div class="mainlogo">
-          <a href="https://discord.gg/ah2gHZP"><img class="shadowlarge" src="assets/dpl.svg"></a>
-          <a href="https://discord.gg/ah2gHZP"><h1>Join our discord!</h1></a>
-        </div>
-        
-        <footer class="homepage-social-buttons">
-          <a href="https://discord.gg/ah2gHZP"><img class="shadowsmall" height="40px" src="assets/discord.svg"></a>
-          <a href="https://twitch.com/DueProcessLeague"><img class="shadowsmall" width="31px" src="assets/twitch.svg"></a>
-          <a href="https://www.youtube.com/channel/UCA43y0F2Uk6pxJXLwfA3U1Q"><img class="shadowsmall" width="40px" style="padding-bottom: 6px" src="assets/youtube.svg"></a>
-          <a href="https://twitter.com/theDPLeague"><img class="shadowsmall" height="40px" src="assets/twitter.svg"></a>
-          <a href="https://reddit.com/r/DueProcessLeague"><img class="shadowsmall" height="40px" src="assets/reddit.svg"></a>
-          <a href="mailto:dueprocessleague@gmail.com"><img class="shadowsmall" height="40px" src="assets/email.svg"></a>
-        </footer>
-      </div>
-
-      <div style="padding-bottom: 30px;" class="container container-lg page2">
-        <div class="text-box-left">
-          <div class="col">
-            <h1 style="max-width: 30vw;">About</h1>
-            <p>Due Process League is a community competitive league for the attack-and-defense game <a class="dark" href="https://dueprocess.info">Due Process</a>. <!--We are currently in our second season of gameplay, after DFC took the crown of the first!</p>-->
-
-            <p>We primarily operate out of our <a class="dark" href="https://discord.gg/ah2gHZP">Discord</a>. You can find the most recent updates there.</p>
-          </div>
-        </div>
-      </div>
-
-      <div style="padding-bottom: 30px;" class="container container-lg page2">
-        <div class="text-box-left">
-          <div class="col">
-            <h1 style="max-width: 30vw;">Twitch</h1>
-            <div class="flex-grid flex-absolutecenter">
-              <iframe src="https://player.twitch.tv/?channel=DueProcessLeague&parent=dpleague.net" allowfullscreen height="480" width="854" >
-              </iframe>
+        <!-- <header>Header</header> -->
+        <div id="homepage" class="container container-lg">
+            <div class="mainlogo">
+                <a href="https://discord.gg/ah2gHZP"><img class="shadowlarge" src="assets/dpl.svg"></a>
+                <a href="https://discord.gg/ah2gHZP">
+                    <h1>Join our discord!</h1>
+                </a>
             </div>
-          </div>
-        </div>
-      </div>
 
+            <footer class="homepage-social-buttons">
+                <a href="https://discord.gg/ah2gHZP"><img class="shadowsmall" height="40px" src="assets/discord.svg"></a>
+                <a href="https://twitch.com/DueProcessLeague"><img class="shadowsmall" width="31px" src="assets/twitch.svg"></a>
+                <a href="https://www.youtube.com/channel/UCA43y0F2Uk6pxJXLwfA3U1Q"><img class="shadowsmall" width="40px" style="padding-bottom: 6px" src="assets/youtube.svg"></a>
+                <a href="https://twitter.com/theDPLeague"><img class="shadowsmall" height="40px" src="assets/twitter.svg"></a>
+                <a href="https://reddit.com/r/DueProcessLeague"><img class="shadowsmall" height="40px" src="assets/reddit.svg"></a>
+                <a href="mailto:dueprocessleague@gmail.com"><img class="shadowsmall" height="40px" src="assets/email.svg"></a>
+            </footer>
+        </div>
+
+        <div style="padding-bottom: 30px;" class="container container-lg page2">
+            <div class="text-box-left">
+                <div class="col">
+                    <h1 style="max-width: 30vw;">About</h1>
+                    <p>Due Process League is a community competitive league for the attack-and-defense game <a class="dark" href="https://dueprocess.info">Due Process</a>.
+                        <!--We are currently in our second season of gameplay, after DFC took the crown of the first!</p>-->
+
+                        <p>We primarily operate out of our <a class="dark" href="https://discord.gg/ah2gHZP">Discord</a>. You can find the most recent updates there.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-bottom: 30px;" class="container container-lg page2">
+            <div class="text-box-left">
+                <div class="col">
+                    <h1 style="max-width: 30vw;">Twitch</h1>
+                    <div class="flex-grid flex-absolutecenter">
+                        <iframe src="https://player.twitch.tv/?channel=DueProcessLeague&parent=dpleague.net" allowfullscreen height="480" width="854">
+              </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
       <div style="padding-bottom: 30px;" class="container container-lg page2">
         <div class="text-box-left">
           <div class="col">
@@ -175,9 +184,6 @@
           <div class="flex-grid">
             <div class="col">
               <div style="background: #da3ba8;" class="colorbox"></div><h2>HYPA</h2>
-              <!-- <p>
-                Attacker HP Pool + Flashbang Spam
-              </p> -->
               <p>
                 <table>
                   <thead>
@@ -390,10 +396,7 @@
                       <td class>TiGaManN</td>
                     </tr>
                     <tr>
-                      <td class>Feral</td>
-                    </tr>
-                    <tr>
-                      <td class>Cliq</td>
+                      <td class>Louis...</td>
                     </tr>
                     <tr>
                       <td class>Roach</td>
@@ -790,9 +793,6 @@
           <div class="flex-grid">
             <div class="col">
               <div style="background: #008000;" class="colorbox"></div><h2>Gorilla Warfare</h2>
-              <!-- <p>
-                The G is silent
-              </p> -->
               <p>
                 <table>
                   <thead>
@@ -875,9 +875,6 @@
           <div class="flex-grid">
             <div class="col">
               <div style="background: #ff9933;" class="colorbox"></div><h2>Grit n Godless</h2>
-              <!-- <p>
-                The G is silent
-              </p> -->
               <p>
                 <table>
                   <thead>
@@ -916,9 +913,6 @@
           <div class="flex-grid">
             <div class="col">
               <div style="background: #fe5200;" class="colorbox"></div><h2>Imperial Legion</h2>
-              <!-- <p>
-                The G is silent
-              </p> -->
               <p>
                 <table>
                   <thead>
@@ -995,6 +989,41 @@
             </div>
             <div class="col">
               <img src="images/teams/lcg.png">
+            </div>
+          </div>
+
+          <div class="flex-grid">
+            <div class="col">
+              <div style="background: #bff942;" class="colorbox"></div><h2>PRGN Esports</h2>
+              <p>
+                Here to click heads
+              </p>
+              <p>
+                <table>
+                  <thead>
+                    <tr>
+                      <th class>Roster</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class>MKY (captain)</td>
+                    </tr>
+                    <tr>
+                      <td class>Tumble</td>
+                    </tr>
+                    <tr>
+                      <td class>Shrikel</td>
+                    </tr>
+                    <tr>
+                      <td class>Feedmachine</td>
+                    </tr>
+                  </tbody>
+                  </table>
+                </p>
+            </div>
+            <div class="col">
+              <img src="images/teams/prgn esports.png">
             </div>
           </div>
 
@@ -1133,9 +1162,6 @@
           <div class="flex-grid">
             <div class="col">
               <div style="background: #000066;" class="colorbox"></div><h2>Swinging On Em</h2>
-              <!-- <p>
-                We are StatusQuo, proof perfection exists. If you wanna be part of perfection just shoot me a quick DM. You too could join and be one of the GREATS. Join us and keep the method of perfection intact, (disclaimer: half joke)
-              </p> -->
               <p>
                 <table>
                   <thead>
@@ -1204,6 +1230,9 @@
                     <tr>
                       <td class>GoofBall</td>
                     </tr>
+                    <tr>
+                      <td class>Beastlybros</td>
+                    </tr>
                   </tbody>
                   </table>
                 </p>
@@ -1234,19 +1263,10 @@
                       <td class>SickGamer01</td>
                     </tr>
                     <tr>
-                      <td class>Bostonian</td>
-                    </tr>
-                    <tr>
                       <td class>Reviv</td>
                     </tr>
                     <tr>
                       <td class>Hutch</td>
-                    </tr>
-                    <tr>
-                      <td class>D3USONE</td>
-                    </tr>
-                    <tr>
-                      <td class>~KinoTheVulture~</td>
                     </tr>
                     <tr>
                       <td class>Playbug</td>
@@ -1263,9 +1283,6 @@
           <div class="flex-grid">
             <div class="col">
               <div style="background: black;" class="colorbox"></div><h2>The Vegetable Thieves</h2>
-              <!-- <p>
-                We are the rats, we use everything in our arsenal just to win, so join the rats and get on top with a RAT ATTACK!
-              </p> -->
               <p>
                 <table>
                   <thead>
@@ -1302,9 +1319,6 @@
           <div class="flex-grid">
             <div class="col">
               <div style="background: #000064;" class="colorbox"></div><h2>Totally Addicted Gaming</h2>
-              <!-- <p>
-                We are the rats, we use everything in our arsenal just to win, so join the rats and get on top with a RAT ATTACK!
-              </p> -->
               <p>
                 <table>
                   <thead>
@@ -1387,18 +1401,20 @@
         </div>
       </div>
 
-      <div id="copyright" class="container container-lg">
-        <div class="text-box-center">
-          <p>
-            Due Process League 2020<br>
-            Due Process and its associated assets are property of Giant Enemy Crab and Annapurna Interactive.
-          </p>
+    -->
+        <div id="copyright" class="container container-lg">
+            <div class="text-box-center">
+                <p>
+                    Due Process League 2020<br> Due Process and its associated assets are property of Giant Enemy Crab and Annapurna Interactive.
+                </p>
+            </div>
         </div>
-      </div>
     </div>
-    
+
 
     <!-- trying to fix stupid pageload animation thing -->
-    <script> </script>
-  </body>
+    <script>
+    </script>
+</body>
+
 </html>
