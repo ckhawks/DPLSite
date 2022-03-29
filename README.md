@@ -1,2 +1,2 @@
 # DPLSite
-Due Process League Official Website (in development)
+Due Process League's Official Website (deprecated, old)
